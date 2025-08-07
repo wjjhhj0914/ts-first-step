@@ -3,15 +3,17 @@
 // -----------------------------------------------------------------------------
 
 // 1. string 타입의 변수 `planet`을 선언하고 값으로 `'지구'`를 할당하세요.
-
+let planet: string = '지구';
 
 // 2. boolean 타입의 변수 `isRaining`을 선언하고 값으로 `false`를 할당하세요.
-
+let isRaining: boolean = false;
 
 // 3. number 타입의 상수 `PI`를 선언하고 값으로 `3.141592`를 할당하세요.
-
+const PI: number = 3.141592;
 
 // 4. 위에서 선언한 변수 중 하나에 잘못된 타입의 값을 할당해보세요. 어떤 일이 발생하나요?
-
+// isRaining = 'true';
+// Type 'string' is not assignable to type 'boolean'. 라는 에러가 발생합니다.
 
 // 5. 위의 명시적 타입 선언을 모두 제거한 뒤, 각 변수 이름에 마우스를 올려보세요. 무엇이 달라지나요?
+// Type expected. 라는 경고 문구가 뜹니다.
