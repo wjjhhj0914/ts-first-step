@@ -1,39 +1,25 @@
 // --------------------------------------------------------------------------
 // ✅ TypeScript에서 배열 타입
 // --------------------------------------------------------------------------
-
 // 1. 숫자 배열 `ages`를 선언하고 `25, 30, 35, 40`으로 초기화하세요.
-const ages: Array<number> = [25, 30, 35, 40];
+var ages = [25, 30, 35, 40];
 console.log(ages);
-
 // 2. 문자열 배열 `huntr_x`를 선언하고 `'루미', '미라', '조이'`로 초기화하세요.
-let huntr_x: [string, string, string];
+var huntr_x;
 huntr_x = ['루미', '미라', '조이'];
 console.log(huntr_x);
-
 // 3. 문자열과 숫자를 포함하는 튜플 `products`를 선언하세요.
 //    `'더피'`와 `90000`으로 초기화하세요.
-let products: Array<string | number>;
+var products;
 products = ['더피', 90000];
 console.log(products);
-
 // 4. 각 튜플이 두 개의 숫자(x, y)를 가지는 튜플을 포함하는 
 //    배열 `coordinates`를 선언하고, 다음 값들로 초기화하세요.
 //    - (10, 20)
 //    - (30, 40)
 //    - (50, 60)
-let coordinates: [number, number];
+var coordinates;
 coordinates = [10, 20];
 coordinates = [30, 40];
 coordinates = [50, 60];
 console.log(coordinates);
-
-// 5. 아래의 두 배열 타입을 전개 구문을 사용해 새로운 배열 타입 `Combined`로 합치세요.
-
-type Continents = ['유럽', '아프리카']
-//   ^?
-
-type Oceans = ['태평양', '아틀란틱']
-//   ^?
-
-type Combined = [...Continents, ...Oceans];
