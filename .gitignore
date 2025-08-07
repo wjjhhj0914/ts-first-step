@@ -1,0 +1,25 @@
+# macOS 시스템 파일
+.DS_Store
+
+# Bun
+bun.lock
+
+# Node.js
+node_modules/
+
+# pnpm
+pnpm-lock.yaml
+
+# 기타 IDE/에디터 관련 파일
+.vscode/
+
+# TypeScript
+dist/
+build/
+*.js
+*.js.map
+*.d.ts
+*.d.ts.map
+
+# Others
+package-lock.json
