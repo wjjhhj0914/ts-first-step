@@ -17,3 +17,10 @@ if (isString(person)) console.log('person은 문자열!');
 // 3. 위에서 선언한 `unknownValue`가 문자열인지 
 //    `isString` 함수를 통해 확인하고 만약 문자열이라면, 
 //    그 길이를 콘솔에 출력하세요.
+function isString2(value: unknown): value is string {
+  return typeof value === 'string';
+}
+
+let person2: unknown = 'Hyojung';
+
+if (isString2(person2)) console.log(person2.length);
