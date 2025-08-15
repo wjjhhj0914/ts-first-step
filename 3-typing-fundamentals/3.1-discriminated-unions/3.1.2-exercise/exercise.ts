@@ -21,7 +21,7 @@ function describeVehicle(vehicle: Vehicle): string {
     case 'car':
       return `This is a car with ${vehicle.numberOfDoors} doors.`;
     case 'truck':
-      return `This is a car with payload capacity of ${vehicle.payloadCapacity}.`;
+      return `This is a truck with payload capacity of ${vehicle.payloadCapacity}.`;
     default: {
       const _exhaustiveCheck: never = vehicle;
       return _exhaustiveCheck;
