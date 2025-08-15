@@ -26,3 +26,26 @@ const staff: Staff = {
 };
 
 console.log(staff.name);
+
+// --------------------------------------------------------------------------
+
+type beverages = Coffee & Tea;
+
+interface Coffee {
+  kindOfCoffee: string;
+  priceOfCoffee: number;
+}
+
+interface Tea {
+  kind: string;
+  priceOfTea: number;
+}
+
+const myDrink: beverages = {
+  kind: 'Hibiscus',
+  priceOfTea: 4.5,
+  kindOfCoffee: 'Vanilla Latte',
+  priceOfCoffee: 5,
+};
+
+console.log(myDrink.kind);
